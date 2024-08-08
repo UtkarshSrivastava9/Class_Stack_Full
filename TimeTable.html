@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .time {
+            width: 10%;
+        }
+        .subject {
+            width: 18%;
+        }
+        .lunch-break {
+            text-align: center;
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+        .monday, .tuesday, .wednesday, .thursday, .friday {
+            background-color: #e6f7ff;
+        }
+        .monday {
+            background-color: #ffcccc;
+        }
+        .tuesday {
+            background-color: #ccffcc;
+        }
+        .wednesday {
+            background-color: #ffffcc;
+        }
+        .thursday {
+            background-color: #ffccff;
+        }
+        .friday {
+            background-color: #cceeff;
+        }
+    </style>
+</head>
+<body>
+
+<h1>School Timetable</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th class="time">Time</th>
+            <th class="subject">Monday</th>
+            <th class="subject">Tuesday</th>
+            <th class="subject">Wednesday</th>
+            <th class="subject">Thursday</th>
+            <th class="subject">Friday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">8:00 - 10:00</td>
+            <td class="monday" colspan="2">Math</td>
+            <td class="wednesday">Science</td>
+            <td class="thursday">History</td>
+            <td class="friday">Physical Education</td>
+        </tr>
+        <tr>
+            <td class="monday">English</td>
+            <td class="tuesday">Math</td>
+            <td class="wednesday">Geography</td>
+            <td class="thursday">Science</td>
+            <td class="friday">Art</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10:00 - 12:00</td>
+            <td class="monday" colspan="2">Science</td>
+            <td class="wednesday">Math</td>
+            <td class="thursday">English</td>
+            <td class="friday">Music</td>
+        </tr>
+        <tr>
+            <td class="monday">History</td>
+            <td class="tuesday">Geography</td>
+            <td class="wednesday">English</td>
+            <td class="thursday">Math</td>
+            <td class="friday">Computer Science</td>
+        </tr>
+        <tr>
+            <td class="lunch-break" colspan="6">Lunch Break (12:00 - 1:00)</td>
+        </tr>
+        <tr>
+            <td rowspan="2">1:00 - 3:00</td>
+            <td class="monday" colspan="2">Geography</td>
+            <td class="wednesday">History</td>
+            <td class="thursday">Art</td>
+            <td class="friday">Math</td>
+        </tr>
+        <tr>
+            <td class="monday">Art</td>
+            <td class="tuesday">Computer Science</td>
+            <td class="wednesday">Physical Education</td>
+            <td class="thursday">Music</td>
+            <td class="friday">English</td>
+        </tr>
+        <tr>
+            <td>3:00 - 4:00</td>
+            <td class="monday" colspan="2">Music</td>
+            <td class="wednesday">Computer Science</td>
+            <td class="thursday">Physical Education</td>
+            <td class="friday">Geography</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
