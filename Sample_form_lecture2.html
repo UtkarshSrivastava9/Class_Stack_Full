@@ -9,33 +9,43 @@
 
 <div class="container">
     <h1>Sample Form</h1>
-    <form action="/submit" method="post">
+    <form id="sampleForm" action="TimeTable.html" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Name "><br>
-<br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="email@gmail.com"><br>
-<br>
+        <input type="text" id="name" name="name" required placeholder="Name"><br><br>
+
+      
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required ><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="hidden" id="hiddenField" name="hiddenField" value="12345">
+        <select name="bank" id="bank" multiple>
+            <option value="">!!--Please_select_a_bank--!!"</option>
+            <option value="SBI">SBI</option>
+            <option value="swiss_bank">Swiss_Bank</option>
+            <option value="HDFC">HDFC</option>
+        </select>
 <br>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required placeholder="XXXXXXXXXX"><br>
 <br>
-        <label for="DOB">DOB</label>
-        <input type="date" id="date" name="date" required placeholder="DD/MM/YYY">
-        <br>
-        <br>
-        <fieldset>
-            <legend>Gender</legend>
-            <p>Male<input type="radio" name="gender" id="Male"></p>
-            <p>Female<input type="radio" name="gender" id="Female"></p>
-            <p>LGBTQ<input type="radio" name="gender" id="LGBTQ"></p>
-            </fieldset>
-<br>
-        <button type="submit">Submit</button>
+       <input type="submit" value="Login">
     </form>
 </div>
+
+<script>
+    document.getElementById('sampleForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name= document.getElementById('name');
+        const password =document.getElementById('password');
+        const hiddenvalue =document.getElementById('hiddenField');
+
+        const data = {
+            name:name,
+            password:password,
+            hiddenvalue:hiddenvalue
+        };
+        console.log(data); 
+    });
+</script>
 
 </body>
 </html>
