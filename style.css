@@ -1,0 +1,21 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+    color: cadetblue;
+}
+#name{
+    color: rgb(247, 36, 32);
+    background-color: violet;
+}
+#password{
+    background-color: violet;
+}
+#bank{
+    background-color: turquoise;
+    color: chocolate;
+}
+.submit{
+    background-color:cyan;
+    color: crimson;
+    
+}
