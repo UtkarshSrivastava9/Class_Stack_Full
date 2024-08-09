@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        .div2{
+            background-color: blueviolet;
+        }
+        #div1{
+            background-color: brown;
+        }
+        .div3{
+            background-color:darkcyan;
+        }
+        .div4::selection{
+            color: red;
+            background-color: aqua;
+            
+        }
+        .hover:hover+.h{
+            display: block;
+            
+        }
+        strong ::first-letter{
+            color:green;
+        }
+    </style>
+    <div id="div1">
+        <p>One</p>
+        <div class="div2">
+            <h2>Two</h2>
+            <div class="div3">
+                <h3>Three</h3>
+            </div>
+        </div>
+        <p>Four
+
+        </p>
+    </div>
+    <div class="div4" >
+        <h2>Five</h2>
+    </div>
+    <div>Find the text
+        <p>
+            <strong> <h1>Here</h1></strong>
+        </p>
+    </div>
+
+    <h1 class="hidden"> Invisible</h1>
+    <button>Login</button>
+</body>
+</html>

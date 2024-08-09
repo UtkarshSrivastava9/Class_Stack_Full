@@ -6,6 +6,7 @@ h1{
 #name{
     color: rgb(247, 36, 32);
     background-color: violet;
+    border-color: aqua;
 }
 #password{
     background-color: violet;
