@@ -29,6 +29,13 @@
         strong ::first-letter{
             color:green;
         }
+        .hidden{
+            display: none;
+        }
+        h2:hover+.hidden{
+            display: block;
+        
+        }
     </style>
     <div id="div1">
         <p>One</p>
@@ -53,5 +60,9 @@
 
     <h1 class="hidden"> Invisible</h1>
     <button>Login</button>
+
+    <h2 class="h2">Click here</h2>
+    <p class="hidden">u can see me  </p>
+
 </body>
 </html>

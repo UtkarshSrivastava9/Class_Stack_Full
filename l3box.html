@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: 1fr 1fr;
+            gap: 10px; /* Add space between the divs */
+            height: 100vh; /* Optional: make it fill the full viewport height */
+        }
+
+        .div1 {
+            grid-column: span 2;
+        }
+
+        .div2 {
+            grid-column: span 2;
+        }
+
+        .div3 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .div4 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .div5 {
+            grid-column: span 2;
+        }
+
+        .box {
+            border: 2px solid blue;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box div1">header<div></div></div>
+        <div class="box div2">nav<div></div></div>
+        <div class="box div3">section<div></div></div>
+        <div class="box div4">article<div></div></div>
+        <div class="box div6">aside<div></div></div>
+        <div class="box div5">footer<div></div></div>
+    </div>
+</body>
+</html>
