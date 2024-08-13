@@ -1,69 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Positioning Example</title>
+    <title>Sticky Navigation Example</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: rgb(34, 201, 210);
+            color: rgb(211, 132, 29);
             margin: 0;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color:#de0e0e;
         }
-        .container {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            background-color: #060909;
-            border: 2px solid #ccc;
-            overflow: hidden;
-        }
-        .static {
-            position: static;
-            background-color: #ff9999;
-            padding: 10px;
-        }
-        .relative {
-            position: relative;
-            background-color: #99ff99;
-            padding: 60px;
-            top: 20px;
-            left: 10px;
-        }
-        .absolute {
-            position: absolute;
-            background-color:#ff9999;
+
+        header {
+            background-color: rgb(210, 21, 188);
+            color: black;
             padding: 20px;
-            top: 40px;
-            left: 00px;
+            text-align: center;
+            position: relative;
         }
-        .fixed {
-            position: fixed;
-            background-color: #ffcc99;
-            padding: 10px;
-            top: 10px;
-            right: 10px;
-        }
-        .sticky {
+
+        nav {
+            background-color: rgb(161, 19, 43);
             position: sticky;
-            background-color: #ccccff;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav h2 {
+            color: black;
+            text-align: center;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+            justify-content: center;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: rgb(252, 244, 82);
+            color: black;
+            text-align: center;
             padding: 10px;
-            top: 70px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            position: sticky;
+
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="static">Static Position</div>
-        <div class="relative">Relative Position</div>
-        <div class="absolute">Absolute Position</div>
-        <div class="sticky">Sticky Position</div>
-        <div class="fixed">Fixed Position</div>
-    </div>
+    <header>
+        <h1>H E A D E R</h1>
+    </header>
+
+    <nav>
+        <h2>NAVIGATION BAR</h2>
+    </nav>
+
+    <section>
+        <h2>NORAMAL CONTENT</h2>
+        <p>This is a simple webpage with a sticky navigation bar.</p>
+        <p>Scroll down to see the sticky navigation bar in action.</p>
+        <div class="content">
+            <!-- Add a lot of dummy content here to make the page scrollable -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione aut ipsam adipisci mollitia magni </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>FOOTER FOOTER FOOTER </p>
+    </footer>
 </body>
+
 </html>

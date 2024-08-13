@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 5px solid black;
+            display: grid;
+            max-width: 800px;
+            margin: auto;
+            grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+            grid-gap: 10px; /* Space between grid items */
+            color: aliceblue;
+        }
+
+        #b2 {
+            background-color: blue;
+            grid-column: span 1; /* First box in the first row */
+            height: 200px;
+        }
+
+        #b3 {
+            background-color: gray;
+            grid-column: span 1; /* Second box in the first row */
+            height: 200px;
+        }
+
+        #b4 {
+            background-color: yellow;
+            grid-column: span 2; /* Single box spanning full width in the second row */
+            height: 200px;
+        }
+
+        #b5, #b6, #b7 {
+            grid-column: span 1; /* Remaining boxes side by side in the third row */
+            height: 200px;
+        }
+
+        /* Add two more boxes to fill the third row */
+        #b8, #b9 {
+            grid-column: span 1;
+            height: 200px;
+            background-color: lightcoral;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto; /* Center the images inside the blocks */
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="b1">
+        <div id="b2"><img src="chin-tapak-dum-dum-viral-meme-1722763631764-16_9.webp" alt="">1</div>
+        <div id="b3"><img src="chin-tapak-dum-dum-viral-meme-1722763631764-16_9.webp" alt="">2</div>
+        <div id="b4"><img src="chin-tapak-dum-dum-viral-meme-1722763631764-16_9.webp" alt="">3</div>
+        <div id="b5"><img src="chin-tapak-dum-dum-viral-meme-1722763631764-16_9.webp" alt="">4</div>
+        <div id="b6"><img src="chin-tapak-dum-dum-viral-meme-1722763631764-16_9.webp" alt="">5</div>
+        <div id="b7"><img src="chin-tapak-dum-dum-viral-meme-1722763631764-16_9.webp" alt="">6</div>
+        <!-- Added two more boxes -->
+        <div id="b8"><img src="chin-tapak-dum-dum-viral-meme-1722763631764-16_9.webp" alt="">7</div>
+        <div id="b9"><img src="chin-tapak-dum-dum-viral-meme-1722763631764-16_9.webp" alt="">8</div>
+    </div>
+</body>
+</html>
