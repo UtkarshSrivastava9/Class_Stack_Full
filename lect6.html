@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const links[
+            {url: "https://www.google.co.in#1", text: "Google"},
+            {url: 'https://www.google.co.in#2', text: "Yahoo"},
+            {url: 'https://www.google.co.in#3', text: "Bing"},
+            {url: 'https://www.google.co.in#4', text: "Crome"},
+            
+        ]
+        links.forEach(item => {
+            const aTag=document.createElement('a')
+            aTag.setAttribute('href',item.url)
+            aTag.textContent = item.text
+            document.body.appendChild(aTag)
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const links = [
+            {url:'https://imgs.search.brave.com/Ine1sWWrzk4N_y76E87TyXbkujKr54BQmTvCFhbFH04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/NXd2YWt2LmpwZw',text:"Google"},
+            {url:'https://imgs.search.brave.com/Ine1sWWrzk4N_y76E87TyXbkujKr54BQmTvCFhbFH04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/NXd2YWt2LmpwZw',text:"Google 2"},
+            {url:'https://imgs.search.brave.com/Ine1sWWrzk4N_y76E87TyXbkujKr54BQmTvCFhbFH04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/NXd2YWt2LmpwZw',text:"Google 3"},
+            {url:'https://imgs.search.brave.com/Ine1sWWrzk4N_y76E87TyXbkujKr54BQmTvCFhbFH04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/NXd2YWt2LmpwZw',text:"Google 4" },
+        ]
+        links.forEach(item =>{
+            const aTag = document.createElement('img')
+            aTag.setAttribute('src',item.url)
+            aTag.setAttribute('height','100px')
+            aTag.setAttribute('height','100px')
+            
+            document.body.appendChild(imgTag) 
+        })
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const links = [
+            {url:'https://imgs.search.brave.com/Ine1sWWrzk4N_y76E87TyXbkujKr54BQmTvCFhbFH04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/NXd2YWt2LmpwZw',text:"Google"},
+            {url:'https://imgs.search.brave.com/Ine1sWWrzk4N_y76E87TyXbkujKr54BQmTvCFhbFH04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/NXd2YWt2LmpwZw',text:"Google 2"},
+            {url:'https://imgs.search.brave.com/Ine1sWWrzk4N_y76E87TyXbkujKr54BQmTvCFhbFH04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/NXd2YWt2LmpwZw',text:"Google 3"},
+            {url:'https://imgs.search.brave.com/Ine1sWWrzk4N_y76E87TyXbkujKr54BQmTvCFhbFH04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/NXd2YWt2LmpwZw',text:"Google 4" },
+        ]
+        links.forEach(item => {
+            const imgTag = document.createElement('img')
+            imgTag.setAttribute('src', item.url)
+            imgTag.setAttribute('height', '100px')
+            imgTag.setAttribute('width', '100px')
+            
+            document.body.appendChild(imgTag)
+        })
+    </script>
+</body>
+</html>
